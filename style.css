@@ -1,0 +1,229 @@
+/* GENERAL STYLING */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: linear-gradient(white, azure, lightblue, dodgerblue, lightblue, azure, white)
+}
+
+/* HEADER */
+
+#seoultravelguide {
+  border-bottom-style: solid;
+  border-width: 3px;
+}
+
+#logo {
+ display: block;
+ width: 40%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+/* NAV */
+
+.nav div {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  border-style: outset;
+  border-color: darkgray;
+  background-color: slategrey;
+}
+
+.nav div a {
+  border-style: outset;
+  border-color: darkgrey;
+  background-color: rgb(63, 66, 68);
+  font-size: 1.2em;
+  position: relative;
+  padding: .1rem .2rem .1rem .2rem;
+  margin: .3rem .3rem .3rem .3rem;
+}
+
+.navbar:link {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  color: aqua;
+}
+
+/* SLIDESHOW */
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite; 
+}
+
+.slider figure img {
+  width: 20%;
+  height: 100vh;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%
+  }
+  50% {
+    left: -200%
+  }
+  70% {
+    left: -200%
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* TO DO SECTION FORMAT */
+
+.img-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "a a"
+  "b c";
+margin-bottom: 1rem;
+}
+
+.img-left .name {
+  grid-area: a;
+  text-align: center;
+  width: 60%;
+  margin: 3rem auto;
+  border-bottom-style: solid; 
+}
+
+.img-left .image {
+  grid-area: b;
+  margin: 0 auto;
+  width: 80%;
+  box-shadow: 10px 10px;
+}
+
+.img-left .desc-right {
+  grid-area: c;
+  padding: 1em 1em 1em 1em;
+  width: 60%;
+  font-size: 1.2em;
+  background-color: oldlace;
+  box-shadow: 10px 10px;
+}
+
+.img-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "a a"
+  "c b";
+  margin-bottom: 1em;
+}
+
+.img-right .name {
+  grid-area: a;
+  text-align: center;
+  width: 60%;
+  margin: 3rem auto;
+  border-bottom-style: solid; 
+}
+
+.img-right .image {
+  grid-area: b;
+  margin: 0 auto;
+  width: 80%;
+  box-shadow: 10px 10px;
+}
+
+.img-right .desc-left {
+  grid-area: c;
+  padding: 1em 1em 1em 1em;
+  margin-left: 7rem;
+  width: 60%;
+  font-size: 1.2em;
+  background-color: oldlace;
+  box-shadow: 10px 10px;
+}
+
+/* CONTACT PAGE FORMATTING */
+.center {
+  text-align: center;
+}
+
+
+.form-container {
+  background-color: white;
+  margin: 1rem auto;
+  height: 500px;
+  width: 40%;
+  border-style: outset;
+  border-color: lightgrey;
+  border-width: 5px;
+}
+
+form {
+  margin: 5px 5px 5px 5px;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+form fieldarea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+form .fieldname {
+ flex-basis: 100%;
+ flex-direction: row;
+}
+
+form .fieldcomment {
+ flex-direction: column;
+ margin: 0 auto;
+}
+form .submit {
+ display: block;
+margin: 0 auto;
+}
+/* FOOTER */
+
+footer {
+  border-top-style: solid;
+  border-width: 3px;
+}
+footer p {
+  text-align: center;
+}
